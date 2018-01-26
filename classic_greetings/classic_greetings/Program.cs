@@ -18,8 +18,9 @@ namespace classic_greetings
         {
             Console.WriteLine("Hello, world!");
 
-            // prevent console window from closing 
-            Console.ReadLine();
+            // wait for user input to close the window
+            Console.Write("Press any key to continue...");
+            Console.ReadKey(true);
         }
     }
 }
