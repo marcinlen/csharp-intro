@@ -1,5 +1,6 @@
 ﻿/*
  * Program that prints greeting to the console.
+ * Template: C# Console App .NET Framework
  * 
  * M Lentner 2018
  */
