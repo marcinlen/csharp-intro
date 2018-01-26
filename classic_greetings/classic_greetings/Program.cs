@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * Program that prints greeting to the console.
+ * 
+ * M Lentner 2018
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +14,12 @@ namespace classic_greetings
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
+            Console.WriteLine("Hello, world!");
+
+            // prevent console window from closing 
+            Console.ReadLine();
         }
     }
 }
