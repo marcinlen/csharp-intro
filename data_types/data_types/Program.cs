@@ -1,5 +1,5 @@
 ﻿/*
- * Presents 'value' types (primitive types in java) of C# language.
+ * Presents common 'value' (primitives, built-in, simple) types of C# language.
  * Template: C# Console App .NET Core
  * 
  * Variables that are based on value types directly contain values. 
@@ -32,6 +32,10 @@ namespace data_types
             float simple_float = 3.14f;
             System.Single framework_float = 3.14F;
 
+            // double
+            double simple_double = 12.34;
+            System.Double framework_double = 12.34;
+
 
 
             // write to console
@@ -39,6 +43,8 @@ namespace data_types
             Console.WriteLine("Type: {0}, Value: {1}", framework_int.GetType(), framework_int);
             Console.WriteLine("Type: {0}, Value: {1}", simple_float.GetType(), simple_float);
             Console.WriteLine("Type: {0}, Value: {1}", framework_float.GetType(), framework_float);
+            Console.WriteLine("Type: {0}, Value: {1}", simple_double.GetType(), simple_double);
+            Console.WriteLine("Type: {0}, Value: {1}", framework_double.GetType(), framework_double);
 
             // wait for user input to close the window
             Console.WriteLine();
