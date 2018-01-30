@@ -27,6 +27,8 @@ namespace data_types
             /*
              * prefix s - simple type, primitive type, built in type, value type
              * prefix f - .NET Framework type
+             * 
+             * Numeric Types
              */
 
             // signed 8 bit integer
@@ -73,6 +75,15 @@ namespace data_types
             decimal sDecimal = 300.5m;
             System.Decimal fDecimal = 300;
 
+            // character data type
+            char sChar = 'a';
+            System.Char fChar = 'z';
+
+            // boolean type
+            bool trueValue = true;
+            bool falseValue = false;    // default value for bool type
+
+
 
 
             // write to console
@@ -98,6 +109,10 @@ namespace data_types
             Console.WriteLine("Type: {0}, Value: {1}", fDouble.GetType(), fDouble);
             Console.WriteLine("Type: {0}, Value: {1}", sDecimal.GetType(), sDecimal);
             Console.WriteLine("Type: {0}, Value: {1}", fDecimal.GetType(), fDecimal);
+            Console.WriteLine("Type: {0}, Value: {1}", sChar.GetType(), sChar);
+            Console.WriteLine("Type: {0}, Value: {1}", fChar.GetType(), fChar);
+            Console.WriteLine("Type: {0}, Value: {1}", trueValue.GetType(), trueValue);
+            Console.WriteLine("Type: {0}, Value: {1}", falseValue.GetType(), falseValue);
 
             // wait for user input to close the window
             Console.WriteLine();
