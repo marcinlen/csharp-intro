@@ -24,15 +24,19 @@ namespace data_types
     {
         static void Main()
         {
-            // integer types
+            // integer types (32 bit precision)
             int simple_int = 3; // built-in type, simple type, primitive type
             System.Int32 framework_int = 3; // .NET Framework type
 
-            // floats (to initialize float use suffix 'f' or 'F')
+            // long (64 bit precision integer)
+            long simple_long = 4;
+            System.Int64 framework_long = 4;
+
+            // floats (to initialize float use suffix 'f' or 'F') (32 bit precision)
             float simple_float = 3.14f;
             System.Single framework_float = 3.14F;
 
-            // double
+            // double (64 bit precision)
             double simple_double = 12.34;
             System.Double framework_double = 12.34;
 
@@ -41,6 +45,8 @@ namespace data_types
             // write to console
             Console.WriteLine("Type: {0}, Value: {1}", simple_int.GetType(), simple_int);
             Console.WriteLine("Type: {0}, Value: {1}", framework_int.GetType(), framework_int);
+            Console.WriteLine("Type: {0}, Value: {1}", simple_long.GetType(), simple_long);
+            Console.WriteLine("Type: {0}, Value: {1}", framework_long.GetType(), framework_long);
             Console.WriteLine("Type: {0}, Value: {1}", simple_float.GetType(), simple_float);
             Console.WriteLine("Type: {0}, Value: {1}", framework_float.GetType(), framework_float);
             Console.WriteLine("Type: {0}, Value: {1}", simple_double.GetType(), simple_double);
