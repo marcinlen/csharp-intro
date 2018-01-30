@@ -24,33 +24,50 @@ namespace data_types
     {
         static void Main()
         {
-            // integer types (32 bit precision)
-            int simple_int = 3; // built-in type, simple type, primitive type
-            System.Int32 framework_int = 3; // .NET Framework type
+            /*
+             * prefix s - simple type, primitive type, built in type, value type
+             * prefix s - .NET Framework type
+             */
+
+            // signed 8 bit integer
+            sbyte sByte = -128;
+            System.SByte fByte = 127;
+
+            // unsigned 8 bit integer
+            byte sUnByte = 0;
+            System.Byte fUnByte = 255;
+
+            // signed integer types (32 bit precision)
+            int sInt = -2147483648; // built-in type, simple type, primitive type
+            System.Int32 fInt = 2_147_483_647; // .NET Framework type
 
             // long (64 bit precision integer)
-            long simple_long = 4;
-            System.Int64 framework_long = 4;
+            long sLong = -9_223_372_036_854_775_808;
+            System.Int64 fLong = 0x7FFFFFFFFFFFFFFF;
 
             // floats (to initialize float use suffix 'f' or 'F') (32 bit precision)
-            float simple_float = 3.14f;
-            System.Single framework_float = 3.14F;
+            float sFloat = System.Single.MinValue;
+            System.Single fFloat = System.Single.MaxValue;
 
             // double (64 bit precision)
-            double simple_double = 12.34;
-            System.Double framework_double = 12.34;
+            double sDouble = System.Double.MinValue;
+            System.Double fDouble = System.Double.MaxValue;
 
 
 
             // write to console
-            Console.WriteLine("Type: {0}, Value: {1}", simple_int.GetType(), simple_int);
-            Console.WriteLine("Type: {0}, Value: {1}", framework_int.GetType(), framework_int);
-            Console.WriteLine("Type: {0}, Value: {1}", simple_long.GetType(), simple_long);
-            Console.WriteLine("Type: {0}, Value: {1}", framework_long.GetType(), framework_long);
-            Console.WriteLine("Type: {0}, Value: {1}", simple_float.GetType(), simple_float);
-            Console.WriteLine("Type: {0}, Value: {1}", framework_float.GetType(), framework_float);
-            Console.WriteLine("Type: {0}, Value: {1}", simple_double.GetType(), simple_double);
-            Console.WriteLine("Type: {0}, Value: {1}", framework_double.GetType(), framework_double);
+            Console.WriteLine("Type: {0}, Value: {1}", sByte.GetType(), sByte);
+            Console.WriteLine("Type: {0}, Value: {1}", fByte.GetType(), fByte);
+            Console.WriteLine("Type: {0}, Value: {1}", sUnByte.GetType(), sUnByte);
+            Console.WriteLine("Type: {0}, Value: {1}", fUnByte.GetType(), fUnByte);
+            Console.WriteLine("Type: {0}, Value: {1}", sInt.GetType(), sInt);
+            Console.WriteLine("Type: {0}, Value: {1}", fInt.GetType(), fInt);
+            Console.WriteLine("Type: {0}, Value: {1}", sLong.GetType(), sLong);
+            Console.WriteLine("Type: {0}, Value: {1}", fLong.GetType(), fLong);
+            Console.WriteLine("Type: {0}, Value: {1}", sFloat.GetType(), sFloat);
+            Console.WriteLine("Type: {0}, Value: {1}", fFloat.GetType(), fFloat);
+            Console.WriteLine("Type: {0}, Value: {1}", sDouble.GetType(), sDouble);
+            Console.WriteLine("Type: {0}, Value: {1}", fDouble.GetType(), fDouble);
 
             // wait for user input to close the window
             Console.WriteLine();
