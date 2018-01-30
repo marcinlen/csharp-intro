@@ -61,13 +61,17 @@ namespace data_types
             ulong sUnLong = 0;
             System.UInt64 fUnLong = System.UInt64.MaxValue;
 
-            // floats (to initialize float use suffix 'f' or 'F') (32 bit precision)
-            float sFloat = System.Single.MinValue;
-            System.Single fFloat = System.Single.MaxValue;
+            // float 32 bit floating-point value (to initialize float use suffix 'f' or 'F') 
+            float sFloat = -3.5F;
+            System.Single fFloat = 3.5f;
 
-            // double (64 bit precision)
+            // double 64 bit floating-point value
             double sDouble = System.Double.MinValue;
             System.Double fDouble = System.Double.MaxValue;
+
+            // decimal 128 bit floating-point value (financial calculations)(use suffix m for real numbers)
+            decimal sDecimal = 300.5m;
+            System.Decimal fDecimal = 300;
 
 
 
@@ -92,6 +96,8 @@ namespace data_types
             Console.WriteLine("Type: {0}, Value: {1}", fFloat.GetType(), fFloat);
             Console.WriteLine("Type: {0}, Value: {1}", sDouble.GetType(), sDouble);
             Console.WriteLine("Type: {0}, Value: {1}", fDouble.GetType(), fDouble);
+            Console.WriteLine("Type: {0}, Value: {1}", sDecimal.GetType(), sDecimal);
+            Console.WriteLine("Type: {0}, Value: {1}", fDecimal.GetType(), fDecimal);
 
             // wait for user input to close the window
             Console.WriteLine();
