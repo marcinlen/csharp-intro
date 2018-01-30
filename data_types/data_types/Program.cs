@@ -26,7 +26,7 @@ namespace data_types
         {
             /*
              * prefix s - simple type, primitive type, built in type, value type
-             * prefix s - .NET Framework type
+             * prefix f - .NET Framework type
              */
 
             // signed 8 bit integer
@@ -36,6 +36,14 @@ namespace data_types
             // unsigned 8 bit integer
             byte sUnByte = 0;
             System.Byte fUnByte = 255;
+
+            // signed 16 bit integer
+            short sShort = -32768;
+            System.Int16 fShort = 32767;
+
+            // unsigned 16 bit integer
+            ushort sUnShort = 0;
+            System.UInt16 fUnShort = 65535;
 
             // signed integer types (32 bit precision)
             int sInt = -2147483648; // built-in type, simple type, primitive type
@@ -60,6 +68,10 @@ namespace data_types
             Console.WriteLine("Type: {0}, Value: {1}", fByte.GetType(), fByte);
             Console.WriteLine("Type: {0}, Value: {1}", sUnByte.GetType(), sUnByte);
             Console.WriteLine("Type: {0}, Value: {1}", fUnByte.GetType(), fUnByte);
+            Console.WriteLine("Type: {0}, Value: {1}", sShort.GetType(), sShort);
+            Console.WriteLine("Type: {0}, Value: {1}", fShort.GetType(), fShort);
+            Console.WriteLine("Type: {0}, Value: {1}", sUnShort.GetType(), sUnShort);
+            Console.WriteLine("Type: {0}, Value: {1}", fUnShort.GetType(), fUnShort);
             Console.WriteLine("Type: {0}, Value: {1}", sInt.GetType(), sInt);
             Console.WriteLine("Type: {0}, Value: {1}", fInt.GetType(), fInt);
             Console.WriteLine("Type: {0}, Value: {1}", sLong.GetType(), sLong);
