@@ -13,7 +13,7 @@
  * 
  * https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/value-types
  * 
- * Marcin Lentner Jan 2018
+ * Marcin Lentner 01.2018
  */
 
 using System;
@@ -82,9 +82,6 @@ namespace data_types
             // boolean type
             bool trueValue = true;
             bool falseValue = false;    // default value for bool type
-
-
-
 
             // write to console
             Console.WriteLine("Type: {0}, Value: {1}", sByte.GetType(), sByte);
