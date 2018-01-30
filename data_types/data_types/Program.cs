@@ -45,13 +45,21 @@ namespace data_types
             ushort sUnShort = 0;
             System.UInt16 fUnShort = 65535;
 
-            // signed integer types (32 bit precision)
-            int sInt = -2147483648; // built-in type, simple type, primitive type
-            System.Int32 fInt = 2_147_483_647; // .NET Framework type
+            // signed 32 bit integer
+            int sInt = -2147483648; 
+            System.Int32 fInt = 2_147_483_647;
 
-            // long (64 bit precision integer)
+            // unsigned 32 bit integer
+            uint sUnInt = 0;
+            System.UInt32 fUnInt = 4_294_967_295;
+
+            // signed 64 bit integer
             long sLong = -9_223_372_036_854_775_808;
             System.Int64 fLong = 0x7FFFFFFFFFFFFFFF;
+
+            // unsigned 64 bit integer
+            ulong sUnLong = 0;
+            System.UInt64 fUnLong = System.UInt64.MaxValue;
 
             // floats (to initialize float use suffix 'f' or 'F') (32 bit precision)
             float sFloat = System.Single.MinValue;
@@ -74,8 +82,12 @@ namespace data_types
             Console.WriteLine("Type: {0}, Value: {1}", fUnShort.GetType(), fUnShort);
             Console.WriteLine("Type: {0}, Value: {1}", sInt.GetType(), sInt);
             Console.WriteLine("Type: {0}, Value: {1}", fInt.GetType(), fInt);
+            Console.WriteLine("Type: {0}, Value: {1}", sUnInt.GetType(), sUnInt);
+            Console.WriteLine("Type: {0}, Value: {1}", fUnInt.GetType(), fUnInt);
             Console.WriteLine("Type: {0}, Value: {1}", sLong.GetType(), sLong);
             Console.WriteLine("Type: {0}, Value: {1}", fLong.GetType(), fLong);
+            Console.WriteLine("Type: {0}, Value: {1}", sUnLong.GetType(), sUnLong);
+            Console.WriteLine("Type: {0}, Value: {1}", fUnLong.GetType(), fUnLong);
             Console.WriteLine("Type: {0}, Value: {1}", sFloat.GetType(), sFloat);
             Console.WriteLine("Type: {0}, Value: {1}", fFloat.GetType(), fFloat);
             Console.WriteLine("Type: {0}, Value: {1}", sDouble.GetType(), sDouble);
