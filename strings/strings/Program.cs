@@ -1,13 +1,18 @@
 ﻿using System;
 
-namespace strings
+namespace strings2
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
-            /* comment */
+            string city = "Leeds";
+
+            Console.WriteLine("Welcome in {0}.", city);
+            
+            Console.WriteLine();
+            Console.Write("Press any key to continue...");
+            Console.ReadKey();
         }
     }
 }
