@@ -7,8 +7,9 @@ namespace string_operations
         static void Main(string[] args)
         {
             string city = "Leeds";
+            string country = "United Kingdom";
 
-            Console.WriteLine("Welcome to {0}", city);
+            Console.WriteLine("Welcome to {0}, {1}.", city, country);
 
             Console.ReadKey();
         }
