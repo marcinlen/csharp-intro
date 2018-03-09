@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * String facilities in C#
+ * 
+ * Marcin Lentner 2018
+ */
+
+using System;
 
 namespace string_operations
 {
@@ -6,16 +12,28 @@ namespace string_operations
     {
         static void Main(string[] args)
         {
-            string city = "Leeds";
+            // different ways of creating string variable
+            var city = "Leeds";
             String country = "United Kingdom";
-            string countryCode = "uk";
+            string countryCode = "   gb ";
 
-            // call methods on objects
+            // call methods on string instance
             countryCode = countryCode.ToUpper();
+            countryCode = countryCode.Trim();
 
             // string formatting
-            Console.WriteLine("Welcome to {0}, {1}.", city, country);
-            Console.WriteLine("Welcome to {0}.", countryCode);
+            Console.WriteLine("Welcome to {0}, {1} ({2}).", city, country, countryCode);
+
+            /*
+             * working with substrings
+             */
+            string ElonMuskQoutes = "Persistence is very important. You should not give up unless you are forced to give up. The first step is to establish that something is possible; then probability will occur.";
+
+            int nextQuote = ElonMuskQoutes.IndexOf("The first step");
+            var ElonA = ElonMuskQoutes.Substring(nextQuote);
+
+            Console.WriteLine(ElonA);
+
 
             Console.ReadKey();
         }
